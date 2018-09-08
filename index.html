@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		
+		<script type="text/javascript">
+			
+//			判断用户用的是电脑还是移动端，然后分别跳转到对应界面
+			var userAgent = navigator.userAgent.toLowerCase();
+			if (userAgent.indexOf('android') == -1
+			&& userAgent.indexOf('iphone') == -1
+			&& userAgent.indexOf('ipad') == -1) {
+				
+				location.href = 'pc/index.html';
+				
+			} else {
+				
+				location.href = 'mobile/index.html';
+				
+			}
+			
+		</script>
+		
+	</body>
+</html>
